@@ -1,7 +1,7 @@
 title: "Henry Wolf"
 description: "Personal website & thoughts on data, AI, and adventures."
-url: "https://henrywolf.ai"   # change when experimenting locally
-baseurl: ""                   # leave empty for root
+url: "https://henrywolf.ai"
+baseurl: ""
 author:
   name: "Henry Wolf"
   email: "henry@henrywolf.ai"
