@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<section class="bg-gradient-to-r from-teal-100 to-indigo-100 py-16">
+  <div class="max-w-3xl mx-auto text-center px-4">
+    <h1 class="text-5xl font-extrabold mb-4">Hi, I'm Henry Wolf 👋</h1>
+    <p class="text-xl mb-8">Data scientist · AI tinkerer · World explorer · Golf-obsessed dad.</p>
+    <a href="#journey" class="py-3 px-6 bg-indigo-600 text-white rounded-xl shadow hover:scale-105 transition">Dive into my journey</a>
+  </div>
+</section>
+
+<section id="journey" class="max-w-3xl mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold mb-6">Personal & Professional Timeline</h2>
+  <ul class="space-y-6 border-l-2 border-slate-300 pl-6">
+    <li>
+      <span class="font-semibold">2025 — Present:</span> Building <em>Super User</em>, an AI-driven ed-tech newsletter.
+    </li>
+    <li>
+      <span class="font-semibold">2020 — 2024:</span> Data Science & Product Strategy @ Meta (Facebook).
+    </li>
+    <li>
+      <span class="font-semibold">2015 — 2020:</span> PhD research in computer vision & cognitive psych (left ABD).
+    </li>
+    <!-- Add more milestones -->
+  </ul>
+</section>
+
+<section class="bg-slate-50 py-16">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Latest Posts</h2>
+    <ul>
+      {% for post in site.posts limit:3 %}
+      <li class="mb-4">
+        <a href="{{ post.url | relative_url }}" class="text-xl font-semibold hover:underline">{{ post.title }}</a>
+        <span class="text-sm text-slate-600"> – {{ post.date | date: "%b %e %Y" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="{{ "/blog" | relative_url }}" class="inline-block mt-6 underline">See all posts →</a>
+  </div>
+</section>

@@ -1,0 +1,7 @@
+/* Tiny Tailwind-ish starter */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.1/tailwind.min.css');
+
+/* Custom tweaks */
+body { scroll-behavior: smooth; }
+a { transition: color 0.2s, transform 0.2s; }
+a:hover { color: #6366f1; transform: translateY(-1px); }

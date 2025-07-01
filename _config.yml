@@ -1,0 +1,16 @@
+title: "Henry Wolf"
+description: "Personal website & thoughts on data, AI, and adventures."
+url: "https://henrywolf.ai"   # change when experimenting locally
+baseurl: ""                   # leave empty for root
+author:
+  name: "Henry Wolf"
+  email: "henry@henrywolf.ai"
+social_links:
+  linkedin: "https://www.linkedin.com/in/henrywolf"
+  resume:   "/assets/Henry-Wolf-Resume.pdf"
+  scholar:  "https://scholar.google.com/citations?user=XXXXX"
+permalink: /blog/:title/
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
