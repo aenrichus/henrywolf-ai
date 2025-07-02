@@ -6,9 +6,9 @@ author:
   name: "Henry Wolf"
   email: "henry@henrywolf.ai"
 social_links:
-  linkedin: "https://www.linkedin.com/in/henrywolf"
-  resume:   "/assets/Henry-Wolf-Resume.pdf"
-  scholar:  "https://scholar.google.com/citations?user=XXXXX"
+  linkedin: "https://www.linkedin.com/in/henrywolfai"
+  resume:   "/assets/docs/Wolf_2025.pdf"
+  scholar:  "https://scholar.google.com/citations?user=Q1sWJpsAAAAJ"
 permalink: /blog/:title/
 markdown: kramdown
 highlighter: rouge
