@@ -196,6 +196,7 @@ input::placeholder { color: var(--faint); }
 }
 
 .section--journey { padding-bottom: clamp(40px, 5vw, 56px); }
+.section--projects { padding-bottom: clamp(40px, 5vw, 56px); }
 .section--now { padding-bottom: clamp(48px, 6vw, 64px); }
 
 .section-label {
@@ -269,6 +270,88 @@ input::placeholder { color: var(--faint); }
   color: var(--muted);
   margin-top: 3px;
   max-width: 640px;
+}
+
+/* ---------- Projects ---------- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-body {
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-body h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.project-body p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.project-links a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fafafa;
+  background: var(--accent);
+  padding: 7px 13px;
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+.project-links a:hover { opacity: 0.85; }
+
+.project-card--placeholder {
+  border: 1.5px dashed var(--border);
+  border-radius: 12px;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card--placeholder span {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 11px;
+  color: var(--faint);
 }
 
 /* ---------- Now card ---------- */
