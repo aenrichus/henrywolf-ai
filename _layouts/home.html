@@ -2,41 +2,67 @@
 layout: default
 ---
 
-<section class="bg-gradient-to-r from-teal-100 to-indigo-100 py-16">
-  <div class="max-w-3xl mx-auto text-center px-4">
-    <h1 class="text-5xl font-extrabold mb-4">Hi, I'm Henry Wolf 👋</h1>
-    <p class="text-xl mb-8">Data scientist · AI tinkerer · World explorer · Golf-obsessed dad.</p>
-    <a href="#journey" class="py-3 px-6 bg-indigo-600 text-white rounded-xl shadow hover:scale-105 transition">Dive into my journey</a>
+<header class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">DATA SCIENCE · AI · LEARNING</div>
+    <h1>Data scientist and AI builder, writing about how machines change the way we learn.</h1>
+    <p class="hero-lede">A decade across cognitive science research and product data science at Meta. Now writing <strong>Super User</strong>, a newsletter for people building with AI in education.</p>
+    <!-- Signup forms are not wired to a provider yet; point action at the Super User signup endpoint. -->
+    <form class="signup" action="#" method="post">
+      <input type="email" name="email" placeholder="you@company.com" aria-label="Email address" required>
+      <button type="submit">Get Super User</button>
+    </form>
+    <div class="signup-note">Monthly · Free · Unsubscribe anytime</div>
+  </div>
+  <img class="hero-photo" src="{{ "/assets/headshot.jpg" | relative_url }}" alt="Henry Wolf">
+</header>
+
+<section class="section section--journey">
+  <h2 class="section-label">JOURNEY</h2>
+  <ol class="timeline">
+    <li class="timeline-item is-current">
+      <div class="timeline-rail"><div class="timeline-dot"></div></div>
+      <div class="timeline-body">
+        <div class="timeline-date">2025 — Now</div>
+        <div class="timeline-role">Super User — founder &amp; writer</div>
+        <div class="timeline-desc">Monthly deep dives on AI in education; advisory for ed-tech teams.</div>
+      </div>
+    </li>
+    <li class="timeline-item">
+      <div class="timeline-rail"><div class="timeline-dot"></div></div>
+      <div class="timeline-body">
+        <div class="timeline-date">2020 — 2024</div>
+        <div class="timeline-role">Meta — data science &amp; product strategy</div>
+        <div class="timeline-desc">Shipped measurement and growth strategy across consumer products.</div>
+      </div>
+    </li>
+    <li class="timeline-item">
+      <div class="timeline-rail"><div class="timeline-dot"></div></div>
+      <div class="timeline-body">
+        <div class="timeline-date">2015 — 2020</div>
+        <div class="timeline-role">Doctoral research</div>
+        <div class="timeline-desc">Computer vision &amp; cognitive psychology.</div>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="section section--now">
+  <div class="now-card">
+    <div class="now-label">NOW</div>
+    <p>Writing the next issue of Super User · Open to advisory &amp; fractional data science work · <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
   </div>
 </section>
 
-<section id="journey" class="max-w-3xl mx-auto px-4 py-16">
-  <h2 class="text-3xl font-bold mb-6">Personal & Professional Timeline</h2>
-  <ul class="space-y-6 border-l-2 border-slate-300 pl-6">
-    <li>
-      <span class="font-semibold">2025 — Present:</span> Building <em>Super User</em>, an AI-driven ed-tech newsletter.
-    </li>
-    <li>
-      <span class="font-semibold">2020 — 2024:</span> Data Science & Product Strategy @ Meta (Facebook).
-    </li>
-    <li>
-      <span class="font-semibold">2015 — 2020:</span> PhD research in computer vision & cognitive psych (left ABD).
-    </li>
-    <!-- Add more milestones -->
-  </ul>
-</section>
-
-<section class="bg-slate-50 py-16">
-  <div class="max-w-3xl mx-auto px-4 text-center">
-    <h2 class="text-3xl font-bold mb-6">Latest Posts</h2>
-    <ul>
-      {% for post in site.posts limit:3 %}
-      <li class="mb-4">
-        <a href="{{ post.url | relative_url }}" class="text-xl font-semibold hover:underline">{{ post.title }}</a>
-        <span class="text-sm text-slate-600"> – {{ post.date | date: "%b %e %Y" }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-    <a href="{{ "/blog" | relative_url }}" class="inline-block mt-6 underline">See all posts →</a>
+<section id="subscribe" class="subscribe-band">
+  <div class="subscribe-inner">
+    <div class="subscribe-blurb">
+      <div class="subscribe-title">Super User</div>
+      <div class="subscribe-sub">One rigorous read per month on AI and how we learn.</div>
+    </div>
+    <form class="signup" action="#" method="post">
+      <input type="email" name="email" placeholder="you@company.com" aria-label="Email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
   </div>
 </section>

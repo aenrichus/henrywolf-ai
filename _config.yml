@@ -10,7 +10,15 @@ social_links:
   resume:   "/assets/docs/Wolf_2025.pdf"
   scholar:  "https://scholar.google.com/citations?user=Q1sWJpsAAAAJ"
 permalink: /blog/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 markdown: kramdown
 highlighter: rouge
 plugins:
   - jekyll-feed
+exclude:
+  - "Website design review-handoff.zip"

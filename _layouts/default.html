@@ -3,20 +3,18 @@
   <head>
     {% include head.html %}
   </head>
-  <body class="flex flex-col min-h-screen font-sans text-slate-800">
-    <header class="py-4">
-      <nav class="max-w-3xl mx-auto flex justify-between items-center px-4">
-        <a href="{{ "/" | relative_url }}" class="text-2xl font-bold">HW</a>
-        <div class="space-x-4">
-          <a href="{{ "/blog" | relative_url }}">Blog</a>
-          <a href="{{ site.social_links.linkedin }}">LinkedIn</a>
-          <a href="{{ site.social_links.resume }}">Résumé</a>
-          <a href="{{ site.social_links.scholar }}">Scholar</a>
-        </div>
-      </nav>
-    </header>
+  <body>
+    <nav class="site-nav">
+      <a href="{{ "/" | relative_url }}" class="wordmark">Henry Wolf</a>
+      <div class="nav-links">
+        <a href="{{ site.social_links.linkedin }}">LinkedIn</a>
+        <a href="{{ site.social_links.resume | relative_url }}">Résumé</a>
+        <a href="{{ site.social_links.scholar }}">Scholar</a>
+        <a href="{{ "/" | relative_url }}#subscribe" class="nav-cta">Subscribe</a>
+      </div>
+    </nav>
 
-    <main class="flex-1">
+    <main>
       {{ content }}
     </main>
 
