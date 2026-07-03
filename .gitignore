@@ -1,0 +1,18 @@
+# OS junk
+.DS_Store
+
+# Design handoff bundle (local reference only)
+Website design review-handoff.zip
+
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Bundler
+vendor/
+.bundle/
+
+# Local Claude Code config
+.claude/settings.local.json
+.claude/launch.json
